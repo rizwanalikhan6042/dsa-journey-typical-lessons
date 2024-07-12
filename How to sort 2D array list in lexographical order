@@ -1,0 +1,16 @@
+list is our 2 d arraylist here  
+Collections.sort(list,(ArrayList<Integer>first,ArrayList<Integer>second)->{
+            for(int i=0;i<first.size()&&i<second.size();i++){
+                if(first.get(i)<second.get(i)){
+                    return -1;
+                }
+                if(first.get(i)>second.get(i)){
+                    return 1;
+                }
+            }
+            if(first.size()>second.size()){
+                return 1;
+            } 
+            return -1;
+
+        });
